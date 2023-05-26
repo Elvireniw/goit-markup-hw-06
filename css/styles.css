@@ -651,6 +651,7 @@ body {
 }
 
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -695,3 +696,244 @@ body {
 .modal-close-btn:focus .modal-close-icon {
   fill: #ffffff;
 }
+
+/*================ Modal window =================*/
+
+/*================ Modal field ==================*/
+
+.modal-contact-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.modal-contact-form-field-wrapper {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal-contact-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
+
+.modal-contact-form-input:focus {
+  outline: none;
+  border: 1px solid var(--text-color-hover);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contact-form-field-comment-wrapper {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.contact-form-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-comment::placeholder {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-comment:focus {
+  outline: none;
+  border: 1px solid var(--text-color-hover);
+  border-radius: 4px;
+}
+
+.modal-contact-form-desc {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+}
+
+.contact-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.modal-contact-form-policy {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #8e8f99;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.policy {
+  display: flex;
+  align-items: center;
+}
+
+.privacy-policy {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  text-decoration-line: underline;
+  color: var(--text-color-hover);
+}
+
+.modal-contact-form-submit {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contact-form-submit:hover,
+.modal-contact-form-submit:focus {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.modal-contact-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.modal-contact-form-icon {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  position: absolute;
+  display: block;
+  fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contact-form-input:focus + .modal-contact-form-icon {
+  fill: var(--text-color-hover);
+}
+
+.contact-form-own-checkbox {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* .contact-form-check-icon {
+  opacity: 0;
+} */
+
+.contact-form-checkbox:checked + .contact-form-own-checkbox {
+  padding: 4px 3px;
+  border-radius: 2px;
+  background: #404bbf;
+  border: 1px solid #404bbf;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+/*================ Modal field ==================*/
+
+/*================ Subscribe ====================*/
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  background: none;
+  outline: none;
+}
+
+.subscribe-form-input::placeholder {
+  font-family: var(--primary-font);
+  font-size: 12px;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.btn-subscribe {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 169px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.btn-subscribe-wrapper {
+  position: relative;
+}
+
+.subscribe-send-icon {
+  top: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  display: block;
+  position: absolute;
+}
+
+/*================ Subscribe ====================*/
