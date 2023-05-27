@@ -716,6 +716,10 @@ body {
   margin-bottom: 8px;
 }
 
+.comment-form-wraper {
+  margin-bottom: 16px;
+}
+
 .modal-contact-form {
   font-size: 12px;
   line-height: 1.17;
