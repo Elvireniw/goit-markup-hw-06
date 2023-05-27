@@ -443,7 +443,7 @@
               <input
                 class="subscribe-form-input"
                 type="email"
-                name="user_email"
+                name="user-email-sub"
                 placeholder="E-mail"
                 required
               />
@@ -488,13 +488,10 @@
             </div>
           </div>
           <div class="modal-contact-form-wrapper">
-            <label class="modal-contact-form-field-wrapper" for="user-phone"
-              >Phone</label
-            >
+            <label class="modal-contact-form-field-wrapper">Phone</label>
             <div class="modal-contact-input-wrapper">
               <input
                 class="modal-contact-form-input"
-                id="user-name"
                 type="tel"
                 name="user_phone"
                 required
@@ -507,13 +504,10 @@
             </div>
           </div>
           <div class="modal-contact-form-wrapper">
-            <label class="modal-contact-form-field-wrapper" for="user-email"
-              >Email</label
-            >
+            <label class="modal-contact-form-field-wrapper">Email</label>
             <div class="modal-contact-input-wrapper">
               <input
                 class="modal-contact-form-input"
-                id="user-name"
                 type="email"
                 name="user_email"
                 required
@@ -523,8 +517,10 @@
               </svg>
             </div>
           </div>
-          <div class="modal-contact-form-field-wrapper">
-            <label for="user-comment">Comment</label>
+          <div class="modal-contact-form-field-comment">
+            <label class="modal-contact-form-comment" for="user-comment"
+              >Comment</label
+            >
             <textarea
               class="contact-form-comment"
               id="user-comment"
@@ -532,6 +528,7 @@
               placeholder="Text input"
             ></textarea>
           </div>
+          <!-- Checkbox -->
           <div class="modal-contact-form-checkbox">
             <input
               class="input-checkbox visually-hidden"

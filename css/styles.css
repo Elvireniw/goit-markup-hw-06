@@ -722,7 +722,6 @@ body {
   letter-spacing: 0.04em;
   color: var(--color-modal-window);
   display: block;
-  margin-bottom: 4px;
 }
 
 .modal-contact-form-input {
@@ -733,7 +732,7 @@ body {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  ransition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-contact-form-input:focus {
@@ -752,8 +751,15 @@ body {
   fill: var(--text-color-hover);
 }
 
-.modal-contact-form-field-wrapper {
+.modal-contact-form-field-wrapper,
+.modal-contact-form-comment {
+  display: block;
   margin-bottom: 4px;
+}
+
+.modal-contact-form-field-comment {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .contact-form-comment {
@@ -820,7 +826,9 @@ body {
   fill: transparent;
 }
 
-.input-checkbox:checked + .modal-contact-form-policy {
+.input-checkbox:checked
+  + .contact-form-checkbox-wrapper
+  > .modal-contact-form-policy {
   background-color: var(--accent-color);
   border: none;
   fill: #ffffff;
