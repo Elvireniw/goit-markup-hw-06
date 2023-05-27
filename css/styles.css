@@ -753,11 +753,7 @@ body {
 }
 
 .modal-contact-form-field-wrapper {
-  margin-bottom: 8px;
-}
-
-.modal-contact-form-field-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .contact-form-comment {
@@ -807,30 +803,31 @@ body {
 }
 
 .contact-form-checkbox-wrapper {
-  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-modal-window);
 }
 
 .modal-contact-form-policy {
-  font-family: var(--primary-font);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #8e8f99;
-  margin-left: 8px;
-  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2f42;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 
-.policy {
-  display: flex;
-  align-items: center;
+.input-checkbox:checked + .modal-contact-form-policy {
+  background-color: var(--accent-color);
+  border: none;
+  fill: #ffffff;
+  border-color: var(--accent-color);
 }
 
 .privacy-policy {
-  font-family: var(--primary-font);
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  text-decoration-line: underline;
   color: var(--text-color-hover);
 }
 
@@ -859,50 +856,6 @@ body {
 .modal-contact-form-submit:focus {
   background: var(--accent-color);
   color: #ffffff;
-}
-
-.modal-contact-form-input-wrapper {
-  position: relative;
-  display: block;
-}
-
-.modal-contact-form-icon {
-  top: 50%;
-  transform: translateY(-50%);
-  left: 16px;
-  position: absolute;
-  display: block;
-  fill: var(--primary-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-contact-form-input:focus + .modal-contact-form-icon {
-  fill: var(--text-color-hover);
-}
-
-.contact-form-own-checkbox {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-/* .contact-form-check-icon {
-  opacity: 0;
-} */
-
-.contact-form-checkbox:checked + .contact-form-own-checkbox {
-  padding: 4px 3px;
-  border-radius: 2px;
-  background: #404bbf;
-  border: 1px solid #404bbf;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-form-checkbox {
-  appearance: none;
-  position: absolute;
 }
 
 /*================ Modal field ==================*/
